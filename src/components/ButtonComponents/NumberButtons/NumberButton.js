@@ -1,6 +1,9 @@
 import React from "react";
 const background = {
-  background: 'teal'
+  background: 'teal',
+  height: '100px',
+  width: '100px',
+  borderRadius: '50%',
 }
 
 export const NumberButton = (props) => {

@@ -1,7 +1,14 @@
 import React from "react";
 const background = {
-  background: 'blue'
+  background: 'blue',
+  height: '100px',
+  width: '100px',
+  borderRadius: '50%',
 }
+
+ 
+  
+
 export const OperatorButton = (props) => {
   return (
     <div>
