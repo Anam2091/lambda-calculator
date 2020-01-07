@@ -1,9 +1,13 @@
 import React from "react";
 
+const background = {
+  background: 'lightblue'
+}
+
 export const SpecialButton = (props) => {
   return (
   <div>
-  <button>{props.button3}</button>
+  <button style={background}>{props.button3}</button>
   </div>
   );
 };
