@@ -16,6 +16,20 @@ const box1 = {
   flexBasis: '50%'
 
 }
+const big0 = {
+  background:'black',
+  width:'80%',
+  color:'white',
+  textAlign:'right',
+  fontSize:'45px',
+  marginLeft:'auto',
+  marginRight:'auto',
+  height:'100px',
+  borderRadius: '15%',
+  marginBottom:'25px'
+
+
+}
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -27,6 +41,10 @@ function App() {
   return (
     <div className="container">
       <Logo/>
+      <div style ={big0}>
+        <p>0</p>
+
+      </div>
       <div style={parent} className="App">
         <div>
           <Specials/>
