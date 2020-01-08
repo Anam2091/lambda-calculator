@@ -1,9 +1,25 @@
 import React from "react";
+import Flexbox from 'flexbox-react';
 
-const SpecialButton = () => {
+
+const background = {
+  background: 'lightblue',
+  height: '100px',
+  width: '100px',
+  borderRadius: '50%', 
+  fontSize:'50px'
+ 
+  
+ 
+ 
+ 
+}
+
+
+export const SpecialButton = (props) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+  <div>
+  <button style={background}>{props.button3}</button>
+  </div>
   );
 };
