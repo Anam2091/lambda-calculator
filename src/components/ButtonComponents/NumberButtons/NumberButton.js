@@ -4,6 +4,10 @@ const background = {
   height: '100px',
   width: '100px',
   borderRadius: '50%',
+  fontSize:'50px',
+  marginBottom:'30px',
+  marginTop:'10px'
+  
 }
 
 export const NumberButton = (props) => {

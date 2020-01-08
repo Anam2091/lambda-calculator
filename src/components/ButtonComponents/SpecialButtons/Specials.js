@@ -1,6 +1,13 @@
 import { specials } from '../../../data';
 import React, {useState} from "react";
 import {SpecialButton} from './SpecialButton'
+const display3 = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent:'space-around',
+  
+
+}
 
 //import any components needed
 
@@ -11,7 +18,7 @@ export const Specials = () => {
   const [specialsState, setspecialsState] = useState(specials);
 
   return (
-    <div>{
+    <div style={display3}>{
       specialsState.map(function(numberdiff3){
         return <SpecialButton button3={numberdiff3}/>
         

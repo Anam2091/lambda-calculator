@@ -9,6 +9,13 @@ import {Specials} from './components/ButtonComponents/SpecialButtons/Specials'
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import { format } from "path";
+const parent = {
+  display:'flex',
+}
+const box1 = {
+  flexBasis: '50%'
+
+}
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -19,12 +26,20 @@ function App() {
 
   return (
     <div className="container">
-      <Logo />
-      <div className="App">
+      <Logo/>
+      <div style={parent} className="App">
+        <div>
+          <Specials/>
+          <Numbers/>
+
+        </div>
+        
+        <div style={box1}>
+          <Operators/>
+
+        </div>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers/>
-        <Operators/>
-        <Specials/>
+        
       </div>
     </div>
   );
